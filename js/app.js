@@ -77,5 +77,7 @@ function rest(data){
     var sizes = geometry.attributes.size.array;
     geometry.attributes.size.needsUpdate = true;
     renderer.render( scene, camera );
+	console.log(camera.position);
+
   }
 }
