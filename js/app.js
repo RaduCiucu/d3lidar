@@ -20,8 +20,7 @@ function rest(data){
     var container = document.getElementById( 'container' );
     container.appendChild( renderer.domElement );
     camera = new THREE.PerspectiveCamera( 50, WIDTH / HEIGHT, 1, 10000 );
-    camera.position.z = 30;
-    camera.position.y = -50;
+    camera.position.set(10,12,25);
     camera.rotation = 140 * Math.PI / 180
     controls = new THREE.TrackballControls( camera );
     controls.rotateSpeed = 1.0;
