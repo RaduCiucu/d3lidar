@@ -1,4 +1,4 @@
-d3.csv("rtest.csv", function(error, data) {
+d3.csv("./rtest.csv", function(error, data) {
     if (error) throw error;
     console.log(data);
     rest(data)
